@@ -10221,3 +10221,14 @@ Stack trace:
 #13 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(123): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #14 C:\Users\Rohin Tamang\Desktop\test\test\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #15 {main}  
+[2017-03-21 14:26:07] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Laravel\Proxy\TrustedProxyServiceProvider' not found in C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:201
+Stack trace:
+#0 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(143): Illuminate\Foundation\ProviderRepository->createProvider('Laravel\\Proxy\\T...')
+#1 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php(60): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#2 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(543): Illuminate\Foundation\ProviderRepository->load(Array)
+#3 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#4 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(208): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#5 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(270): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 C:\Users\Rohin Tamang\Desktop\test\test\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(115): Illuminate\Foundation\Console\Kernel->bootstrap()
+#7 C:\Users\Rohin Tamang\Desktop\test\test\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
