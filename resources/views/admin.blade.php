@@ -20,6 +20,14 @@
 <body>
 <div class="container-fluid">
     <h2>Welcome admin!</h2>
+
+    @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
+
+
     <div class="row">
         <div class="col-md-3">
             <div class="btn-group-vertical">

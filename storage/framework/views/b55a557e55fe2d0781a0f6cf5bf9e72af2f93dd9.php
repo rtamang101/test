@@ -15,6 +15,15 @@
 <body>
 <div class="container">
 	<div class="row">
+
+
+		<?php if(session('status')): ?>
+			<div class="alert alert-success">
+				<?php echo e(session('status')); ?>
+
+			</div>
+		<?php endif; ?>
+
 		<div class="col-md-6">
 
 			<form class="form-horizontal" action="register" method="POST">

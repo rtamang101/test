@@ -15,6 +15,14 @@
 <body>
 <div class="container">
 	<div class="row">
+
+
+		@if (session('status'))
+			<div class="alert alert-success">
+				{{ session('status') }}
+			</div>
+		@endif
+
 		<div class="col-md-6">
 
 			<form class="form-horizontal" action="register" method="POST">

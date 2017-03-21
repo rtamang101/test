@@ -14,6 +14,13 @@
 <div class="container-fluid">
     <h2>Latest Alert!</h2>
 
+    <?php if(session('status')): ?>
+        <div class="alert alert-success">
+            <?php echo e(session('status')); ?>
+
+        </div>
+    <?php endif; ?>
+
     <div class="col-md-12">
         <div class="col-md-2" style="padding-top:2%;">
         </div>

@@ -20,6 +20,15 @@
 <body>
 <div class="container-fluid">
     <h2>Welcome admin!</h2>
+
+    <?php if(session('status')): ?>
+        <div class="alert alert-success">
+            <?php echo e(session('status')); ?>
+
+        </div>
+    <?php endif; ?>
+
+
     <div class="row">
         <div class="col-md-3">
             <div class="btn-group-vertical">

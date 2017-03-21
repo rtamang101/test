@@ -44,12 +44,10 @@
 					<div class="control-group">
 						<!-- Button -->
 						<div class="controls">
-							<button class="btn btn-success" type="submit">Register</button>
+							<button class="btn btn-success" type="submit">Login</button>
 						</div>
 					</div>
-					<div class="etc-login-form">
-						<p>new user? <a href="register.html">create new account</a></p>
-					</div>
+
 				</fieldset>
 			</form>
 

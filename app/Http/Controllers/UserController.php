@@ -69,7 +69,7 @@ class UserController extends Controller
 
         $user->save();
 
-        return back();
+        return redirect()->back()->with('status', 'Employee created Successfully');
 
 
     }
@@ -83,7 +83,9 @@ class UserController extends Controller
 
 
         $user->save();
-        return back();
+
+        //return "hello";
+        return redirect()->route('status')->with('status',' Message Send Successfully');
 
 
     }
@@ -98,10 +100,21 @@ class UserController extends Controller
         $user = DB::table('messages')->select('id', 'text','dep_id')->where('dep_id', '=', $dep_id)
             ->orderby('id','DESC')
             ->get();
+        $user1 = DB::table('responces')->select('id')->where('message_id', '=', $user[0]->id)
+            ->where('user_id', '=', $id)
+            ->get();
 
+      if($user1->count()==0){
+           return  View('show_message',['user'=>$user],['user_id'=>$id,'d_id'=>$dep_id]);
+
+        }
+        else{
               //$d_id=$dep_id;
-    return  View('show_message',['user'=>$user],['user_id'=>$id,'d_id'=>$dep_id]);
+         // return  'status: No have any message';
+            return redirect()->route('status')->with('status','you have no new message');
 
+        }
+       // return $user1;
     }
 
     public function send_responce(Request $request){
@@ -124,7 +137,9 @@ class UserController extends Controller
 
         $resp->save();
       // dump($request->user_id,$request->responce,$request->message_id);
-        return  "responce send succesfully ";
+        //return 'responce send succesfully';
+        return redirect()->route('status')->with('status',' responce send succesfully');
+
 
     }
 

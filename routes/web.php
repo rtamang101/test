@@ -29,3 +29,7 @@ Route::get('/get_message/{dep_id}/{id}','UserController@get_message');
 Route::post('get_message/{id}/send_responce','UserController@send_responce');
 
 Route::get('get_messages','UserController@get_messages');
+
+Route::get('/status', function () {
+    return view('status');
+})->name('status');
