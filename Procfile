@@ -1,1 +1,1 @@
-web:vendor/bin/test public_html/
+web:public_html/
