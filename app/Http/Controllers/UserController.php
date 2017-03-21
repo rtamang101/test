@@ -69,7 +69,7 @@ class UserController extends Controller
 
         $user->save();
 
-        return redirect()->back()->with('status', 'Employee created Successfully');
+        return redirect()->back()->with('status', 'Employee Successfully Created');
 
 
     }
@@ -85,7 +85,7 @@ class UserController extends Controller
         $user->save();
 
         //return "hello";
-        return redirect()->route('status')->with('status',' Message Send Successfully');
+        return redirect()->route('status')->with('status',' Message Successfully Sent');
 
 
     }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login Form</title>
+	<title>Login</title>
 
 	<meta charset="utf-8">
 	<link href="css/font-awesome.css" rel='stylesheet' type='text/css'>
@@ -32,10 +32,10 @@
 						<legend class="">Register Page</legend>
 					</div>
 					<div class="control-group">
-						<label class="control-label" for="username">Username</label>
+						<label class="control-label" for="username">Name</label>
 						<div class="controls">
 							<input type="text" id="username" name="name" placeholder="" class="form-control input-lg">
-							<p class="help-block">Username can contain any letters or numbers, without spaces</p>
+							<!-- <p class="help-block">First or Last name without spaces</p> -->
 						</div>
 					</div>
 					<div class="control-group">
