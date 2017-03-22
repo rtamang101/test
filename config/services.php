@@ -34,6 +34,5 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-    'providers' => array('Fideloper\proxy\TrustedProxyServiceProvider')
 
 ];
